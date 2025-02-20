@@ -3,21 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Login</title>
 </head>
 <body>
-    <section class="w-[100%] h-[100vh] bg-[url('images/Bg.jpg')] bg-center bg-cover">
-        <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.6)]">
-            <header class="max-w-[1170px] mx-auto">
-                <div class=" w-[30%] items-center py-4">
-                    <figure>
-                        <img src="Images/pngwing.com.png" class="w-[200px]">
-                    </figure>
+    <section class="w-full h-screen bg-[url('images/Bg.jpg')] bg-center bg-cover relative">
+        <div class="w-full h-screen bg-[rgba(0,0,0,0.6)] absolute inset-0"></div>
+
+        <header class="max-w-[1170px] mx-auto relative z-10">
+            <div class="w-1/3 items-center py-4">
+                <figure>
+                    <img src="Images/pngwing.com.png" class="w-[200px]" alt="Logo">
+                </figure>
+            </div>
+        </header>
+
+        <div class="absolute inset-0 flex justify-center items-center">
+            <div class="bg-black bg-opacity-60 p-10 rounded-md w-full max-w-md text-white">
+                <h2 class="text-3xl font-bold mb-6">Sign In</h2>
+
+                <form class="flex flex-col gap-4" novalidate>
+                    <div class="flex flex-col">
+                      <input
+                        type="email"
+                        placeholder="Email or mobile number"
+                        class="peer p-3 bg-black bg-opacity-20 border border-white/30 border-[0.1px] rounded-md focus:outline-none focus:border-white focus:border focus:ring-0"
+                        required
+                      />
+                      <p class="hidden text-[rgb(210,47,39)] text-sm mt-1 peer-invalid:block">
+                        Please enter a valid email.
+                      </p>
+                    </div>
+                  
+                    <div class="flex flex-col">
+                      <input
+                        type="password"
+                        placeholder="Password"
+                        class="peer p-3 bg-black bg-opacity-20 border border-white/30 border-[0.1px] rounded-md focus:outline-none focus:border-white focus:border focus:ring-0"
+                        required
+                      />
+                      <p class="hidden text-[rgb(210,47,39)] text-sm mt-1 peer-invalid:block">
+                        Password is required.
+                      </p>
+                    </div>
+                  
+                    <button
+                      class="bg-[#D22F27] hover:bg-red-800 transition duration-300 text-white py-3 rounded-md font-bold"
+                      type="submit"
+                    >
+                      Sign In
+                    </button>
+                  </form>
+                  
+                  
+                <div class="flex justify-between items-center text-sm text-gray-400 mt-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="remember" class="mr-2">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="hover:underline">Need help?</a>
                 </div>
-            </header>
+
+                <div class="text-gray-400 mt-6 text-sm">
+                    New to Netflix? <a href="#" class="text-white hover:underline">Sign up now.</a>
+                </div>
+
+                <p class="text-xs text-gray-500 mt-4">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                    <a href="#" class="text-blue-600 hover:underline">Learn more.</a>
+                </p>
+            </div>
         </div>
     </section>
-    <div class="flex justify-center items-center "
 </body>
 </html>
+
