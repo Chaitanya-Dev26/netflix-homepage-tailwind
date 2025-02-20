@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Netflix | Home </title>
+</head>
+<body>
+    <section class="w-[100%] h-[100vh] bg-[url('images/Bg.jpg')] bg-center bg-cover">
+        <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.6)]">
+            <header class="max-w-[1170px] mx-auto">
+                <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] px-[10px] py-[5px] items-center">
+                    <figure>
+                        <img src="Images/pngwing.com.png" class="w-[200px]">
+                    </figure>
+                    <div class="flex justify-end gap-[10px]">
+                        <div class="relative">
+                            <select name="" id="" class="bg-black text-white border-[1px] border-[white] sm:p-[5px_25px] p-[5px_20px] rounded-[5px]
+                            focus:border-white focus:ring-1 focus:ring-white focus:outline-none"">
+                                <option value="">English</option>
+                                <option value="">Hindi</option>
+                            </select>
+                        </div>
+                        <button class="bg-[red] px-[15px] rounded-[5px] text-white hover:bg-[rgb(193,17,25)] duration-300">
+                            Sign In
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <div class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-center">
+                <h1 class="sm:text-[50px] text-[35px] font-bold text-white ">Unlimited movies, TV <br> shows and more</h1>
+                <h4 class="text-white text-[20px] py-[15px]">Starts at ₹149. Cancel at any time.</h4>
+                <p class="text-white text-[20px]" >Ready to watch? Enter your email to create or restart your membership.</p>
+                
+                <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px]">
+                <form action="" class="grid sm:grid-cols-[70%_auto] sm:grid-cols-1 gap-[15px]">
+                    <input type="text" class="border-[1px] border-[#ccc] placeholder-[white] text-white bg-[transperent] pl-[20px] h-[55px] rounded-5px p-[16px] 
+                    focus:border-white focus:ring-2 focus:ring-white focus:outline-none"
+                    placeholder="Email Address">
+                    <button class="cursor-pointer bg-[red] px-[15px] rounded-[5px] text-[20px] font-bold text-white py-[12px] hover:bg-[rgb(193,17,25)] duration-300">Get Started ></button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
